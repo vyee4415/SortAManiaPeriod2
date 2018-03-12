@@ -79,11 +79,11 @@ public abstract class Team3SortCompetition extends SortCompetition {
 	
 	public int challengeThree(int[][] arr){
 		insertionSort(arr);
-		int what = (newarr.length+1)/2;
+		int what = (arr.length+1)/2;
 		if(arr.length%2==1){ // if length of newarr is odd
-		        return(newarr[(newarr.length-1)/2]);
+		        return(arr[(arr.length-1)/2]);
 		}else{
-		        return((((newarr[what]+newarr[what-1])/2)));
+		        return((((arr[what]+arr[what-1])/2)));
 		}
 	}
 	public int challengeFour(int[][] arr){
