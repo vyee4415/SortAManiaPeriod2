@@ -60,7 +60,7 @@ public abstract class Team3SortCompetition extends SortCompetition {
 
 
 	}
-	//Jacky Chen
+	//Jacky Chen 
 	public int challengeTwo(String[] arr, String query) { 
         String[]  mergeResult=mergeSort(arr);
         for(int i=0;i<mergeResult.length;i++)	
