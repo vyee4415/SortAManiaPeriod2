@@ -93,18 +93,24 @@ public abstract class Team3SortCompetition extends SortCompetition {
 	
 // ------------------------------------------------------------------//	
 	
-	public int challengeThree(int[] arr){
+	// Sophia Qiu
+	public int challengeThree(int[] arr)
+	{
 		insertionSort(arr);
-		int what = (arr.length+1)/2;
-		if(arr.length%2==1){ // if length of newarr is odd
+		int randlist = (arr.length + 1)/2;
+		if(arr.length%2==1)  // if length of is odd
+		{
 		        return(arr[(arr.length-1)/2]);
-		}else{
-		        return((((arr[what]+arr[what-1])/2)));
+		}
+		else //if even
+		{
+		        return((((arr[randlist]+arr[randlist - 1])/2)));
 		}
 	}
 	public static void insertionSort(int[] list1)
 	{
-        for (int i = 1; i < list1.length; i++) {
+        for (int i = 1; i < list1.length; i++) 
+	{
             for(int j = i ; j > 0 ; j--){
                 if(list1[j] < list1[j-1]){
                     xinsertionSort(list1,j,j-1);
