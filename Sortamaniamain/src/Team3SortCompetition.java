@@ -60,13 +60,10 @@ public abstract class Team3SortCompetition extends SortCompetition {
 
 
 	}
+	//Jacky Chen
 	public int challengeTwo(String[] arr, String query) { 
         String[]  mergeResult=mergeSort(arr);
-		long start = System.nanoTime();
-		long end = System.nanoTime();
-		long time = end - start;
-		System.out.println("Merge Took :" + time + "nanoseconds");
-		for(int i=0;i<mergeResult.length;i++)	
+        for(int i=0;i<mergeResult.length;i++)	
 		{
 			if(query.equals(mergeResult[i]))
 			{
@@ -181,7 +178,7 @@ public abstract class Team3SortCompetition extends SortCompetition {
 				ri++;
 				i++;
 			}
-			else if(list1[li].compareTo(list2[ri])<0) 
+			else if(list1[li].compareTo(list2[ri])<=0) 
 			{
 				empty[i]=list1[li];
 				li++;
